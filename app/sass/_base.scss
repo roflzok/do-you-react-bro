@@ -1,0 +1,96 @@
+// ============================================================
+// ============================================================
+// ChumpChange Base Styles
+// ============================================================
+// ============================================================
+
+html {
+  @include tablet {
+    // font-size: 14px;
+  }
+  @include mobile {
+    font-size: 14px;
+  }
+}
+
+body {
+  position: relative;
+  font: 300 rem(16)/rem(26) $body-typeface;
+  letter-spacing: 1px;
+	color: $gray;
+}
+
+
+
+// Headings
+// ============================================================
+
+%headings {
+  font: 300 100%/1.25 $heading-typeface;
+  letter-spacing: 2px;
+  margin-top: rem(10);
+  margin-bottom: rem(10);
+}
+
+h1, h2, h3, h4 {
+  @extend %headings;
+}
+
+$heading-size: (
+  h1: 48,
+  h2: 30,
+  h3: 24,
+  h4: 20
+);
+
+@each $heading, $size in $heading-size {
+  #{$heading} {
+    font-size: rem($size);
+  }
+}
+
+
+
+// Body Text
+// ============================================================
+
+p {
+  // margin: 0 0 rem(20);
+}
+
+small {
+  font-size: rem(14);
+  letter-spacing: 1px;
+  color: rgba(51,51,51,0.7);
+  text-transform: none;
+}
+
+a {
+	font-weight: normal;
+  color: $green;
+  text-decoration: none;
+  &:hover {
+    color: $dark-green;
+  }
+}
+
+*:hover {
+  @include transition(250ms);
+}
+
+
+
+// Helper Classes
+// ============================================================
+
+.hide {
+  display: none;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.center-xs { // overriding flexboxgrid
+  text-align: left;
+}

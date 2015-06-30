@@ -1,0 +1,43 @@
+// ============================================================
+// ============================================================
+// ChumpChange Mixins
+// ============================================================
+// ============================================================
+
+
+
+// REM Conversion
+// ============================================================
+
+@function rem($size) {
+  $remValue: ($size / 16);
+  @return #{$remValue}rem;
+}
+
+
+
+// Media Queries
+// ============================================================
+
+$mobile-width: 320px;
+$tablet-width: 768px;
+$desktop-width: 1024px;
+
+@mixin mobile {
+  @media (min-width: #{$mobile-width}) and (max-width: #{$tablet-width - 1px}) {
+    @content;
+  }
+}
+
+
+@mixin tablet {
+  @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$desktop-width}) {
+    @content;
+  }
+}
