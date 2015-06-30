@@ -29,7 +29,7 @@ body {
   position: relative;
   font: 300 rem(16)/rem(26) $body-typeface;
   letter-spacing: 1px;
-	color: $gray;
+	color: $color-text;
 }
 
 
@@ -88,9 +88,9 @@ small {
 
 a {
 	font-weight: normal;
-  color: $blue;
+  color: $color-link;
   &:hover {
-    color: $dark-blue;
+    color: darken($color-link, 15%);
   }
 }
 

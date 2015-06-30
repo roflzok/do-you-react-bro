@@ -337,7 +337,7 @@ td, th {
 
 body {
   position: relative;
-  font: 300 1rem/1.625rem "Sorts Mills Goudy", Times, serif;
+  font: 300 1rem/1.625rem "Helvetica Neue", "Helvetica", sans-serif;
   letter-spacing: 1px;
   color: #333333; }
 
@@ -380,9 +380,9 @@ small {
 
 a {
   font-weight: normal;
-  color: #49bae4; }
+  color: #425f9c; }
   a:hover {
-    color: #20a7da; }
+    color: #2b3e66; }
 
 *:hover {
   -webkit-transition: 250ms;
@@ -505,7 +505,7 @@ nav a {
     margin-bottom: 1.25rem; }
 
 footer {
-  color: rgba(51, 51, 51, 0.4);
+  color: #999;
   font-size: 0.75rem;
   font-style: italic; }
 
