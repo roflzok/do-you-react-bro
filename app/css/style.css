@@ -1,3 +1,5 @@
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url(http://fonts.googleapis.com/css?family=Sorts+Mill+Goudy:400,400italic);
 @import url(../../bower_components/flexboxgrid/dist/flexboxgrid.css);
 /* *********************************** */
 /* *********************************** */
@@ -326,19 +328,22 @@ table {
 td, th {
   padding: 0; }
 
+@media (min-width: 768px) and (max-width: 1023px) {
+  html {
+    font-size: 15px; } }
 @media (min-width: 320px) and (max-width: 767px) {
   html {
     font-size: 14px; } }
 
 body {
   position: relative;
-  font: 300 1rem/1.625rem "Lato", Verdana, "Helvetica Neue", Helvetica, sans-serif;
+  font: 300 1rem/1.625rem "Sorts Mills Goudy", Times, serif;
   letter-spacing: 1px;
   color: #333333; }
 
-h1, h2, h3, h4 {
-  font: 300 100%/1.25 "Lato", Verdana, "Helvetica Neue", Helvetica, sans-serif;
-  letter-spacing: 2px;
+h1, h2, h3, h4, h5, h6 {
+  font: bold 100%/1.25 "Montserrat", Verdana, sans-serif;
+  letter-spacing: -1.5px;
   margin-top: 0.625rem;
   margin-bottom: 0.625rem; }
 
@@ -354,6 +359,19 @@ h3 {
 h4 {
   font-size: 1.25rem; }
 
+h5 {
+  font-size: 1.125rem; }
+
+h6 {
+  font-size: 0.875rem; }
+
+.lead {
+  font-family: "Montserrat", Verdana, sans-serif;
+  font-size: 0.75rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px; }
+
 small {
   font-size: 0.875rem;
   letter-spacing: 1px;
@@ -362,10 +380,9 @@ small {
 
 a {
   font-weight: normal;
-  color: #159849;
-  text-decoration: none; }
+  color: #49bae4; }
   a:hover {
-    color: #205533; }
+    color: #20a7da; }
 
 *:hover {
   -webkit-transition: 250ms;
@@ -413,14 +430,6 @@ header {
     header {
       padding-right: 0.625rem;
       padding-left: 0.625rem; } }
-  header .logo {
-    position: relative;
-    top: 5px;
-    display: inline-block;
-    height: 40px;
-    width: 154px;
-    background: url("../imgs/logo@3x.png") no-repeat;
-    background-size: contain; }
 
 nav {
   text-align: right; }
@@ -475,143 +484,30 @@ nav {
     align-self: center;
     -ms-flex-item-align: center; }
 
-.product-photos .row > .col-xs-12 {
-  padding: 0; }
-.product-photos img {
-  width: 100%; }
-
 footer {
   text-align: center; }
   footer a {
     display: block; }
 
-body .invert-theme * {
-  color: white; }
-
-.hero, footer {
-  background: #205533 url('../imgs/bg-dark@3x.png') repeat;
-  background-size: 50px 52px; }
+header h1 {
+  font-size: 1rem;
+  font-weight: normal;
+  letter-spacing: 0; }
 
 nav a {
-  color: rgba(255, 255, 255, 0.7);
-  font-weight: 300; }
-  nav a:hover {
-    color: white; }
-nav .active a {
-  font-weight: normal;
-  color: white; }
-  nav .active a:hover {
-    color: white; }
+  font-family: "Montserrat", Verdana, sans-serif;
+  font-size: 12px; }
 
 .home {
   position: relative; }
   .home .hero h1 {
-    font-size: 3.75rem;
     text-transform: capitalize;
     margin-bottom: 1.25rem; }
-  .home .hero a {
-    font-weight: 300;
-    line-height: 20px; }
-    .home .hero a:before {
-      content: '';
-      position: relative;
-      top: 3px;
-      display: inline-block;
-      width: 18px;
-      height: 20px;
-      background: url('/app/imgs/icon-play@2x.png') no-repeat;
-      background-size: 18px 20px;
-      margin-right: 10px; }
-  .home .claim-it {
-    position: absolute;
-    right: 0;
-    bottom: 1.25rem;
-    left: 0; }
-    .home .claim-it p {
-      color: white;
-      margin: 0; }
-    .home .claim-it a:hover {
-      color: #159849;
-      text-decoration: underline; }
-
-.chump-for-merchants h2 {
-  text-transform: capitalize; }
-.chump-for-merchants h3 {
-  font-size: 1.125rem;
-  font-weight: bold;
-  letter-spacing: 1px; }
-
-h2 {
-  color: #159849;
-  margin-bottom: 2.5rem; }
-  h2:after {
-    content: '';
-    display: block;
-    width: 100px;
-    height: 1px;
-    background-color: #159849;
-    margin: 1.25rem auto; }
-
-.cost .price {
-  margin-bottom: 2.5rem; }
-  .cost .price h2 {
-    color: #333333;
-    font-size: 3.75rem;
-    font-weight: normal;
-    text-align: center;
-    margin-bottom: 5px; }
-    .cost .price h2:after {
-      display: none; }
-  .cost .price p {
-    margin: 0;
-    color: #159849;
-    font-weight: normal;
-    letter-spacing: 0.5px;
-    text-align: center;
-    text-transform: capitalize; }
-.cost .plus {
-  display: block;
-  font-weight: normal; }
-  @media (min-width: 320px) and (max-width: 767px) {
-    .cost .plus {
-      margin: 2.5rem 0; } }
-.cost .features ul {
-  padding-left: 0;
-  list-style-type: none; }
-
-.testimonial {
-  background-color: #159849; }
-  .testimonial h2 {
-    color: #205533; }
-    .testimonial h2:after {
-      background-color: #205533; }
-  .testimonial h3 small {
-    font-weight: 300;
-    color: rgba(255, 255, 255, 0.7); }
-  .testimonial blockquote {
-    margin: 2.5rem 0;
-    font-style: italic; }
-  .testimonial .attribution {
-    position: relative;
-    padding-left: 5rem; }
-    .testimonial .attribution p {
-      margin: 0;
-      line-height: 1; }
-    .testimonial .attribution small {
-      color: rgba(255, 255, 255, 0.7); }
-    .testimonial .attribution:before {
-      content: '';
-      display: inline-block;
-      position: absolute;
-      left: 0;
-      bottom: -5px;
-      width: 60px;
-      height: 60px;
-      background-color: #205533;
-      border-radius: 60px; }
 
 footer {
-  background-color: #205533; }
+  color: rgba(51, 51, 51, 0.4);
+  font-size: 0.75rem;
+  font-style: italic; }
 
 
 /*# sourceMappingURL=style.css.map */

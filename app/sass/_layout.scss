@@ -1,6 +1,6 @@
 // ============================================================
 // ============================================================
-// ChumpChange Layout Styles
+// Layout Styles
 // ============================================================
 // ============================================================
 
@@ -61,15 +61,6 @@ header {
 		padding-right: rem(10);
 		padding-left: rem(10);
 	}
-	.logo {
-		position: relative;
-		top: 5px;
-		display: inline-block;
-		height: 40px;
-		width: 154px;
-		background: url("../imgs/logo@3x.png") no-repeat;
-		background-size: contain;
-	}
 }
 
 nav {
@@ -115,20 +106,6 @@ nav {
 		> :first-child {
 			@include align-self(center);
 		}
-	}
-}
-
-
-
-// Product Photos on Merchant Page
-// ============================================================
-
-.product-photos {
-	.row > .col-xs-12 {
-		padding: 0;
-	}
-	img {
-		width: 100%;
 	}
 }
 

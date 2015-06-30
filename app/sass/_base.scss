@@ -1,12 +1,24 @@
 // ============================================================
 // ============================================================
-// ChumpChange Base Styles
+// Base Styles
 // ============================================================
+// ============================================================
+
+
+// Import Google Fonts
+// ============================================================
+
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url(http://fonts.googleapis.com/css?family=Sorts+Mill+Goudy:400,400italic);
+
+
+
+// Body
 // ============================================================
 
 html {
   @include tablet {
-    // font-size: 14px;
+    font-size: 15px;
   }
   @include mobile {
     font-size: 14px;
@@ -26,13 +38,13 @@ body {
 // ============================================================
 
 %headings {
-  font: 300 100%/1.25 $heading-typeface;
-  letter-spacing: 2px;
+  font: bold 100%/1.25 $heading-typeface;
+  letter-spacing: -1.5px;
   margin-top: rem(10);
   margin-bottom: rem(10);
 }
 
-h1, h2, h3, h4 {
+h1, h2, h3, h4, h5, h6 {
   @extend %headings;
 }
 
@@ -40,7 +52,9 @@ $heading-size: (
   h1: 48,
   h2: 30,
   h3: 24,
-  h4: 20
+  h4: 20,
+  h5: 18,
+  h6: 14
 );
 
 @each $heading, $size in $heading-size {
@@ -57,6 +71,13 @@ $heading-size: (
 p {
   // margin: 0 0 rem(20);
 }
+.lead {
+  font-family: $heading-typeface;
+  font-size: rem(12);
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
 
 small {
   font-size: rem(14);
@@ -67,10 +88,9 @@ small {
 
 a {
 	font-weight: normal;
-  color: $green;
-  text-decoration: none;
+  color: $blue;
   &:hover {
-    color: $dark-green;
+    color: $dark-blue;
   }
 }
 

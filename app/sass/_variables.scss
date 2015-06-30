@@ -1,14 +1,14 @@
 // ============================================================
 // ============================================================
-// ChumpChange Variables
+// Variables
 // ============================================================
 // ============================================================
 
 
 // Typefaces
 // ============================================================
-$heading-typeface: "Lato", Verdana, "Helvetica Neue", Helvetica, sans-serif;
-$body-typeface: "Lato", Verdana, "Helvetica Neue", Helvetica, sans-serif;
+$heading-typeface: "Montserrat", Verdana, sans-serif;
+$body-typeface: "Sorts Mills Goudy", Times, serif;
 
 
 
@@ -17,9 +17,10 @@ $body-typeface: "Lato", Verdana, "Helvetica Neue", Helvetica, sans-serif;
 
 $gray: #333333;
 $light-gray: rgba(51,51,51,0.4);
-$green: #159849;
-$dark-green: #205533;
-$blue: #19B4D4;
+$green: #78c533;
+$dark-green: darken($green, 10%);
+$blue: #49bae4;
+$dark-blue: darken($blue, 10%);
 $white-70: rgba(255,255,255,0.7);
 $white-40: rgba(255,255,255,0.4);
 
