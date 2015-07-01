@@ -1,50 +1,30 @@
 // ============================================================
 // ============================================================
-// Theme Styles
+// Main CSS Import File
 // ============================================================
 // ============================================================
+@import "warning";
+@import "bourbon";
+@import "normalize";
 
 
 
-// Header
+// Set Us Up Teh Base Styles
 // ============================================================
-
-header {
-	h1 {
-		font-size: rem(16);
-		font-weight: normal;
-		letter-spacing: 0;
-	}
-}
-
-nav a {
-	font-family: $heading-typeface;
-	font-size: 12px;
-}
+@import "variables";
+@import "mixins";
+@import "base";
+@import "mediaqueries";
 
 
 
-// Home 
+// Elements
 // ============================================================
-
-.home {
-	position: relative;
-
-	.hero {
-		h1 {
-			text-transform: capitalize;
-			margin-bottom: $pad-sm;
-		}
-	}
-}
+@import "elements/header";
+@import "elements/footer";
 
 
 
-// Footer
+// For everything else
 // ============================================================
-
-footer {
-	color: #999;
-	font-size: rem(12);
-	font-style: italic;
-}
+@import "shame";

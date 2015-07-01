@@ -10,6 +10,7 @@ var gulp = require('gulp'),
     connect = require('gulp-connect'),
     wrap = require('gulp-wrap'),
     del = require('del'),
+    React = require('react'),
     $ = require('gulp-load-plugins')();
 
 
@@ -75,7 +76,7 @@ gulp.task('connect', function() {
 // ----------------------------------------
 
 gulp.task('sassy', function () {
-    return gulp.src(sourceDir + 'sass/style.scss')
+    return gulp.src(sourceDir + 'sass/main.scss')
     .pipe($.plumber({ errorHandler: $.notify.onError("SASS compile has failed! <%= error %>") }))
     .pipe($.sourcemaps.init())
     .pipe($.sass({

@@ -1,6 +1,6 @@
 @import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
 @import url(http://fonts.googleapis.com/css?family=Sorts+Mill+Goudy:400,400italic);
-@import url(../../bower_components/flexboxgrid/dist/flexboxgrid.css);
+@import url(../../node_modules/flexboxgrid/dist/flexboxgrid.css);
 /* *********************************** */
 /* *********************************** */
 /* DO NOT EDIT THIS CSS FILE DIRECTLY! */
@@ -389,14 +389,14 @@ a {
   -moz-transition: 250ms;
   transition: 250ms; }
 
-.hide {
-  display: none; }
+.full-height {
+  height: 100vh; }
 
-.text-center {
-  text-align: center; }
+.medium-height {
+  height: 40rem; }
 
-.center-xs {
-  text-align: left; }
+.small-height {
+  height: 20rem; }
 
 .wrapper {
   padding-top: 2.5rem;
@@ -410,26 +410,33 @@ a {
   padding-top: 5rem;
   padding-bottom: 5rem; }
 
-.full-height {
-  height: 100vh; }
+.hero.align-center > .row {
+  height: 100%; }
+  .hero.align-center > .row > :first-child {
+    -webkit-align-self: center;
+    -moz-align-self: center;
+    align-self: center;
+    -ms-flex-item-align: center; }
 
-.medium-height {
-  height: 40rem; }
+.hide {
+  display: none; }
 
-.small-height {
-  height: 20rem; }
+.text-center {
+  text-align: center; }
+
+.center-xs {
+  text-align: left; }
 
 header {
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  z-index: 2;
   padding: 0.625rem 2.5rem; }
   @media (min-width: 320px) and (max-width: 767px) {
     header {
       padding-right: 0.625rem;
       padding-left: 0.625rem; } }
+  header h1 {
+    font-size: 1rem;
+    font-weight: normal;
+    letter-spacing: 0; }
 
 nav {
   text-align: right; }
@@ -469,34 +476,14 @@ nav {
   nav a {
     display: block;
     margin-left: 50px;
-    text-decoration: none;
-    line-height: 50px; }
+    font-family: "Montserrat", Verdana, sans-serif;
+    font-size: 12px;
+    line-height: 50px;
+    text-decoration: none; }
     @media (min-width: 320px) and (max-width: 767px) {
       nav a {
         margin-left: 0;
         text-align: center; } }
-
-.hero.align-center > .row {
-  height: 100%; }
-  .hero.align-center > .row > :first-child {
-    -webkit-align-self: center;
-    -moz-align-self: center;
-    align-self: center;
-    -ms-flex-item-align: center; }
-
-footer {
-  text-align: center; }
-  footer a {
-    display: block; }
-
-header h1 {
-  font-size: 1rem;
-  font-weight: normal;
-  letter-spacing: 0; }
-
-nav a {
-  font-family: "Montserrat", Verdana, sans-serif;
-  font-size: 12px; }
 
 .home {
   position: relative; }
@@ -510,4 +497,4 @@ footer {
   font-style: italic; }
 
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=main.css.map */

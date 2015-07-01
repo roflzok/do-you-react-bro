@@ -5,17 +5,8 @@
 // ============================================================
 
 
-// Import Google Fonts
-// ============================================================
-
-@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
-@import url(http://fonts.googleapis.com/css?family=Sorts+Mill+Goudy:400,400italic);
-
-
-
 // Body
 // ============================================================
-
 html {
   @include tablet {
     font-size: 15px;
@@ -34,9 +25,13 @@ body {
 
 
 
-// Headings
+// Typography
 // ============================================================
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url(http://fonts.googleapis.com/css?family=Sorts+Mill+Goudy:400,400italic);
 
+
+// Headings
 %headings {
   font: bold 100%/1.25 $heading-typeface;
   letter-spacing: -1.5px;
@@ -63,14 +58,7 @@ $heading-size: (
   }
 }
 
-
-
-// Body Text
-// ============================================================
-
-p {
-  // margin: 0 0 rem(20);
-}
+// Body text
 .lead {
   font-family: $heading-typeface;
   font-size: rem(12);
@@ -100,9 +88,54 @@ a {
 
 
 
+// Layout
+// ============================================================
+@import "../../node_modules/flexboxgrid/dist/flexboxgrid.css";
+
+
+// Section Heights
+.full-height {
+  height: 100vh;
+}
+
+.medium-height {
+  height: rem(640);
+}
+
+.small-height {
+  height: rem(320);
+}
+
+
+// Wrappers
+.wrapper {
+  padding-top: $pad-md;
+  padding-bottom: $pad-md;
+}
+.wrapper-sm {
+  padding-top: $pad-sm;
+  padding-bottom: $pad-sm;
+}
+.wrapper-lg {
+  padding-top: $pad-lg;
+  padding-bottom: $pad-lg;  
+}
+
+
+// Heroes
+.hero.align-center {
+  > .row {
+    height: 100%;
+    > :first-child {
+      @include align-self(center);
+    }
+  }
+}
+
+
+
 // Helper Classes
 // ============================================================
-
 .hide {
   display: none;
 }

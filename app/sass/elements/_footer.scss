@@ -1,20 +1,12 @@
 // ============================================================
 // ============================================================
-// Imports
+// Footer
 // ============================================================
 // ============================================================
 
-@import "warning";
 
-@import "bourbon";
-@import "normalize";
-
-@import "variables";
-@import "mixins";
-@import "base";
-@import "layout";
-
-@import "theme";
-@import "mediaqueries";
-
-@import "shame";
+footer {
+	color: #999;
+	font-size: rem(12);
+	font-style: italic;
+}
