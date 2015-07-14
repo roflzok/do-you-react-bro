@@ -2,6 +2,8 @@
 
 Not much here yet. Just have to get rid of this fuckin' NPM error.
 
+*Jin*, this is hastily thrown together and the styles are wonky, so please be nice. My primary goal was to get the React templating to work.
+
 ## To Use
 
 1. Clone the repo.
