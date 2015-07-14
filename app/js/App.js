@@ -1,57 +1,82 @@
 'use strict';
 
-var React              = require('react/addons');
-var Reflux             = require('reflux');
-var RouteHandler       = require('react-router').RouteHandler;
+var Header = React.createClass({
 
-var CurrentUserActions = require('./actions/CurrentUserActions');
-var CurrentUserStore   = require('./stores/CurrentUserStore');
-var Header             = require('./components/Header');
-var Footer             = require('./components/Footer');
-
-var App = React.createClass({
-
-  mixins: [Reflux.ListenerMixin],
-
-  getInitialState: function() {
-    return {
-      currentUser: {}
-    };
-  },
-
-  _onUserChange: function(err, user) {
-    if ( err ) {
-      this.setState({ error: err });
-    } else {
-      this.setState({ currentUser: user || {}, error: null });
-    }
-  },
-
-  componentWillMount: function() {
-    console.log('About to mount App');
-  },
-
-  componentDidMount: function() {
-    CurrentUserActions.checkLoginStatus(this._onUserChange);
-    this.listenTo(CurrentUserStore, this._onUserChange);
-  },
-
-  render: function() {
+	  render: function() {
     return (
-      <div>
 
-        <Header />
+            /* EDIT HTML */
+			      <header role="header">
+							<div class="row between-xs">
 
-        <RouteHandler params={this.props.params}
-                      query={this.props.query}
-                      currentUser={this.state.currentUser} />
+								<div class="col-xs-12 col-sm-6">
+									<div class="box">
+										<h1>Site Title</h1>
+									</div>
+								</div>
 
-        <Footer />
-
-      </div>
+								<div class="col-xs-12 col-sm-6">
+									<div class="box">
+										<nav role="navigation">
+											<ul>
+												<li class="active"><a href="">Nav Item</a></li>
+												<li><a href="#">Nav Item</a></li>
+											</ul>
+										</nav>
+									</div>
+								</div>
+							</div>
+						</header>
     );
   }
 
 });
 
-module.exports = App;
+
+var Footer = React.createClass({
+
+  render: function() {
+    return (
+
+            /* EDIT HTML */
+			      <footer role="footer">
+						<div class="row center-xs">
+							<div class="col-xs-12 col-sm-8 col-md-6">
+								<div class="box wrapper-sm invert-theme">
+									<p class="text-center">&copy; 2015 Company Name.</p>
+								</div>
+							</div>
+						</div>
+					</footer>
+    );
+  }
+
+});
+
+
+
+var App = React.createClass({
+	render: function() {
+    return (
+
+            /* EDIT HTML */
+            <div>
+            	<Header />
+            	<Footer />
+            </div>
+    );
+  }
+});
+
+
+
+/** @jsx React.DOM */
+React.render(
+	<Header/>,
+	document.getElementById('header')
+);
+
+React.render(
+	<Footer/>,
+	document.getElementById('footer')
+);

@@ -1,52 +1,42 @@
 {
-  "name": "react-browserify-gulp-boilerplate",
-  "version": "0.1.0",
-  "author": "Jake Marsh <jakemmarsh@gmail.com>",
-  "description": "Boilerplate using React, Browserify, SASS, and Gulp.",
+  "name": "Drew-Boilerplate",
+  "version": "0.0.2",
+  "description": "Front end boilerplate",
+  "main": "app/app.js",
+  "scripts": {
+    "start": "grunt",
+    "test": "grunt test",
+    "postinstall": "bower install --config.interactive=false"
+  },
   "repository": {
     "type": "git",
-    "url": "https://github.com/jakemmarsh/react-browserify-gulp-boilerplate.git"
+    "url": "https://github.com/roflzok/boilerplate.git"
   },
-  "keywords": [
-    "gulp",
-    "browserify",
-    "react",
-    "sass",
-    "boilerplate"
-  ],
-  "private": true,
-  "engines": {
-    "node": ">=0.10.26"
+  "author": "Drew Chandler",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/roflzok/boilerplate/issues"
+  },
+  "homepage": "https://github.com/roflzok/webapp-boilerplate",
+  "dependencies": {
+    "del": "^1.2.0",
+    "flexboxgrid": "^6.2.0",
+    "react": "^0.13.3"
   },
   "devDependencies": {
-    "babelify": "^5.0.4",
-    "browser-sync": "^2.2.2",
-    "browserify": "^5.10.0",
-    "debowerify": "^1.2.0",
-    "del": "^0.1.3",
-    "express": "^4.12.2",
-    "gulp": "^3.8.8",
-    "gulp-autoprefixer": "^2.1.0",
-    "gulp-if": "^1.2.4",
-    "gulp-imagemin": "^2.0.0",
-    "gulp-notify": "^1.6.0",
-    "gulp-rename": "^1.2.0",
-    "gulp-sass": "^1.3.x",
-    "gulp-sourcemaps": "^1.5.0",
-    "gulp-streamify": "0.0.5",
-    "gulp-uglify": "^1.0.1",
-    "gulp-util": "^3.0.1",
-    "humps": "^0.4.2",
-    "lodash": "^3.3.1",
-    "morgan": "^1.5.1",
-    "react": "^0.12.x",
-    "react-document-title": "^1.0.2",
-    "react-router": "^0.11.x",
-    "reflux": "^0.2.5",
-    "run-sequence": "^0.3.6",
-    "superagent": "^0.21.0",
-    "vinyl-source-stream": "^0.1.1",
-    "watchify": "^2.4.x",
-    "when": "^3.7.2"
+    "gulp": "^3.8.11",
+    "gulp-concat": "^2.6.0",
+    "gulp-connect": "^2.2.0",
+    "gulp-declare": "^0.3.0",
+    "gulp-livereload": "^3.8.0",
+    "gulp-load-plugins": "latest",
+    "gulp-notify": "latest",
+    "gulp-plumber": "latest",
+    "gulp-sass": "^1.3.3",
+    "gulp-sourcemaps": "latest",
+    "gulp-uglify": "^1.1.0",
+    "gulp-wrap": "^0.11.0",
+    "jshint-stylish": "^1.0.0",
+    "node-bourbon": "^4.2.3"
   }
 }
