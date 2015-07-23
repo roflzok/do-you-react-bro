@@ -7,12 +7,9 @@
 
 // Body
 // ============================================================
-html {
-  
-}
 
+html,
 body {
-  position: relative;
   font: 300 rem(16)/rem(26) $body-typeface;
   letter-spacing: 1px;
 	color: $color-text;
@@ -62,8 +59,4 @@ body {
 
 .text-center {
   text-align: center;
-}
-
-.center-xs { // overriding flexboxgrid
-  text-align: left;
 }

@@ -325,8 +325,7 @@ table {
 td, th {
   padding: 0; }
 
-body {
-  position: relative;
+html, body {
   font: 300 0.61538 "Helvetica Neue", "Helvetica", sans-serif;
   letter-spacing: 1px;
   color: #333333; }
@@ -357,9 +356,6 @@ body {
 
 .text-center {
   text-align: center; }
-
-.center-xs {
-  text-align: left; }
 
 
 
