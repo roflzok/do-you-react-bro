@@ -3,28 +3,36 @@
 // Main CSS Import File
 // ============================================================
 // ============================================================
+
 @import "warning";
 @import "bourbon";
+
+
+
+// Set Us Up Teh Base Stuff
+// ============================================================
+
 @import "normalize";
-
-
-
-// Set Us Up Teh Base Styles
-// ============================================================
 @import "variables";
-@import "mixins";
 @import "base";
-@import "mediaqueries";
 
 
 
-// Elements
+// Patterns (buttons, form elements, typography, etc.)
 // ============================================================
-@import "elements/header";
-@import "elements/footer";
+
+@import "patterns/patterns";
+
+
+
+// Components (header, footer, etc.)
+// ============================================================
+
+@import "components/components";
 
 
 
 // For everything else
 // ============================================================
+
 @import "shame";

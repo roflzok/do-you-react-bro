@@ -1,0 +1,55 @@
+// ============================================================
+// ============================================================
+// Typography
+// ============================================================
+// ============================================================
+
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url(http://fonts.googleapis.com/css?family=Sorts+Mill+Goudy:400,400italic);
+
+
+
+// Headings
+// ============================================================
+
+h1, h2, h3, h4, h5, h6 {
+  font: bold 100%/1.25 $heading-typeface;
+  letter-spacing: -1.5px;
+  margin-top: rem(10);
+  margin-bottom: rem(10);
+}
+
+$heading-size: (
+  h1: 48,
+  h2: 30,
+  h3: 24,
+  h4: 20,
+  h5: 18,
+  h6: 14
+);
+
+@each $heading, $size in $heading-size {
+  #{$heading} {
+    font-size: rem($size);
+  }
+}
+
+
+// Body Text
+// ============================================================
+
+p {
+
+}
+
+small {
+
+}
+
+a {
+
+}
+
+a:hover {
+
+}

@@ -5,10 +5,17 @@
 // ============================================================
 
 
-// Typefaces
+// Typography
 // ============================================================
 $heading-typeface: "Montserrat", Verdana, sans-serif;
 $body-typeface: "Helvetica Neue", "Helvetica", sans-serif;
+
+$h1-size: rem(48);
+$h2-size: rem(30);
+$h3-size: rem(24);
+$h4-size: rem(20);
+$h5-size: rem(18);
+$h6-size: rem(14);
 
 
 
@@ -24,16 +31,11 @@ $color-success: green;
 
 
 
-// Padding
+// General Styles
 // ============================================================
+
+$radius: 6px;
 
 $pad-sm: rem(20);
 $pad-md: rem(40);
 $pad-lg: rem(80);
-
-
-
-// General Styles
-// ============================================================
-
-// $radius: 6px;
