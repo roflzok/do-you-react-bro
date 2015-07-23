@@ -19,9 +19,7 @@
   },
   "homepage": "https://github.com/roflzok/webapp-boilerplate",
   "dependencies": {
-    "del": "^1.2.0",
-    "flexboxgrid": "^6.2.0",
-    "react": "^0.13.3"
+    "del": "^1.2.0"
   },
   "devDependencies": {
     "gulp": "^3.8.11",

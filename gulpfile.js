@@ -10,7 +10,6 @@ var gulp = require('gulp'),
     connect = require('gulp-connect'),
     wrap = require('gulp-wrap'),
     del = require('del'),
-    React = require('react'),
     $ = require('gulp-load-plugins')();
 
 
