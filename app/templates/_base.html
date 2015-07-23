@@ -10,32 +10,59 @@
 
 		<!-- Styles -->
 		<link rel="stylesheet" href="css/main.css">
+		<!-- /end Styles -->
 
 	</head>
 	<body id="app">
 
-		<header role="header" id="header"></header>
-		
-		<main role="main">
-			<div class="home">
+		<!-- BEGIN: Header -->
+		<header role="header" id="header">
+			<div class="row between-xs">
 
-				<section class="hero full-height align-center invert-theme">
-					<div class="row center-xs">
-						<div class="col-xs-12 col-sm-8">
-							<div class="box text-center">
-								<h1>Lorem ipsum dolor sit amet adipisicing elit</h1>
-							</div>
-						</div>
+				<div class="col-xs-12 col-sm-6">
+					<div class="box">
+						<h1>Site Title</h1>
 					</div>
-				</section>
+				</div>
 
+				<div class="col-xs-12 col-sm-6">
+					<div class="box">
+						<nav role="navigation">
+							<ul>
+								<li class="active"><a href="">Nav Item</a></li>
+								<li><a href="#">Nav Item</a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
 			</div>
+		</header>
+		<!-- END: Header -->
+		
+		<!-- BEGIN: Main -->
+		<main role="main">
+			<%= contents %>
 		</main>
+		<!-- END: Main -->
 
-		<footer role="footer" id="footer"></footer>
+		<!-- BEGIN: Footer -->
+		<footer role="footer" id="footer">
+			<div class="row center-xs">
+				<div class="col-xs-12 col-sm-8 col-md-6">
+					<div class="box wrapper-sm invert-theme">
+						<p class="text-center">&copy; 2015 Company Name.</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- END: Footer -->
 
+
+
+		<!-- Scripts -->
 	  <script src="js/lib.js"></script>
 		<script src="js/app.js"></script>		
+		<!-- /end Scripts -->
 		
 	</body>
 </html>
